@@ -31,5 +31,13 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'pry-rails'
+  gem 'spork'
+  gem 'rspec-rails'
 #  gem 'ruby-debug19', :require => 'ruby-debug'
 end
+
+group :test do
+  gem 'cucumber-rails'
+end
+
+
