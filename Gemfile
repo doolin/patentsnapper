@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.2.3'
+gem 'rails'
 gem "twitter-bootstrap-rails"
 
 gem 'sqlite3'
@@ -28,6 +28,10 @@ gem 'jquery-rails'
 
 # Deploy with Capistrano
 # gem 'capistrano'
+
+group :development do
+  gem 'rails_best_practices'
+end
 
 group :test, :development do
   gem 'pry-rails'
