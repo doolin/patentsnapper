@@ -5,6 +5,7 @@ gem "twitter-bootstrap-rails"
 gem 'jquery-rails'
 
 gem 'haml-rails'
+gem 'rails-backbone'
 
 group :production do
   gem 'pg'
