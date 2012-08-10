@@ -6,6 +6,9 @@ gem 'jquery-rails'
 
 gem 'haml-rails'
 gem 'rails-backbone'
+gem 'heroku'
+#gem 'eventmachine', '1.0.0.rc.4'
+#gem 'thin'
 
 group :production do
   gem 'pg'
