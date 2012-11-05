@@ -20,7 +20,6 @@ end
 group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
-  gem 'zurb-foundation'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
   gem 'uglifier', '>= 1.0.3'
@@ -35,11 +34,11 @@ group :test, :development do
   gem 'sqlite3'
   gem 'pry-rails'
   gem 'spork'
-  gem 'cucumber-rails'
-  gem 'rspec-rails'
 #  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :test do
   gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'rspec-rails'
 end
