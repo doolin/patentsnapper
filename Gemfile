@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails'
-gem "twitter-bootstrap-rails"
+#gem "twitter-bootstrap-rails"
 gem 'jquery-rails'
 
 gem 'haml-rails'
@@ -35,10 +35,11 @@ group :test, :development do
   gem 'sqlite3'
   gem 'pry-rails'
   gem 'spork'
+  gem 'cucumber-rails'
   gem 'rspec-rails'
 #  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'database_cleaner'
 end
