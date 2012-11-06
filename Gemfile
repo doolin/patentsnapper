@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails'
-#gem "twitter-bootstrap-rails"
 gem 'jquery-rails'
+gem 'devise'
 
 gem 'haml-rails'
 gem 'rails-backbone'
@@ -41,4 +41,6 @@ group :test do
   gem 'database_cleaner'
   gem 'cucumber-rails'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'email_spec'
 end
