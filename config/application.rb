@@ -15,6 +15,8 @@ module Patentserver
     config.generators do |g|
       g.view_specs true
       g.helper_specs true
+      g.fixture_replacement :factory_girl, :dir => 'spec/factories'
+      g.test_framework :rspec
     end
 
     # Settings in config/environments/* take precedence over those specified here.
