@@ -11,6 +11,12 @@ end
 
 module Patentserver
   class Application < Rails::Application
+
+    config.generators do |g|
+      g.view_specs true
+      g.helper_specs true
+    end
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
