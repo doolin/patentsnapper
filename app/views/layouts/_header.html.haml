@@ -1,0 +1,35 @@
+.navbar
+  .navbar-inner
+    .container
+      =link_to "Patent server", root_path, :class => "brand"
+      .cf
+        .nav.pull-right
+          - if user_signed_in?
+            %li=link_to "Settings", edit_user_registration_path
+            %li=link_to "Sign out", destroy_user_session_path, :method => :delete
+          - else
+            %ul.nav
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Plans & Pricing
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Free in Beta!
+                  %li
+                    %a{:href => "#"} Upcoming Paid Features
+            %ul.nav
+              %li.dropdown
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                  Feature Tour
+                  %b.caret
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} Email Notifications
+                  %li
+                    %a{:href => "#"} Online Reports
+                  %li
+                    %a{:href => "#"} Weather Forecasts
+
+            %li=link_to "Sign in", new_user_session_path
+            %li#sign_up_link=link_to "Sign up", new_user_registration_path

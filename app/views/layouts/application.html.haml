@@ -1,14 +1,20 @@
 !!!
 %html
   %head
+    %meta{ :charset => "utf-8" }
     %title Patentserver
     = stylesheet_link_tag    "bootstrap"
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
+    = render 'shared/google_analytics'
     = csrf_meta_tags
   %body{ template_id, template_class }
+    = render 'layouts/header'
     %p.notice
       = notice
     %p.alert
       = alert
     = yield
+
+    %footer
+      = render 'layouts/footer'
