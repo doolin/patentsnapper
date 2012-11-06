@@ -1,6 +1,6 @@
 
 Given /^reader is on home page$/ do
-  pending # express the regexp above with the code you wish you had
+  visit '/'
 end
 
 When /^the reader clicks "(.*?)"$/ do |arg1|
