@@ -1,5 +1,5 @@
 Given /^a site visitor who is not a member$/ do
-  pending # express the regexp above with the code you wish you had
+  visit ('/users/sign_out')
 end
 
 Given /^presses the "(.*?)" button$/ do |arg1|
@@ -23,7 +23,7 @@ When /^the visitor is on the sign up page$/ do
 end
 
 Given /^member is not logged in$/ do
-  pending # express the regexp above with the code you wish you had
+  visit '/users/sign_out'
 end
 
 Given /^member name is "(.*?)" with email "(.*?)" and password "(.*?)"$/ do |arg1, arg2, arg3|
@@ -31,7 +31,7 @@ Given /^member name is "(.*?)" with email "(.*?)" and password "(.*?)"$/ do |arg
 end
 
 When /^I go to the sign in page$/ do
-  pending # express the regexp above with the code you wish you had
+  visit '/users/sign_up'
 end
 
 When /^I sign in as "(.*?)"$/ do |arg1|
@@ -43,7 +43,7 @@ When /^I should be signed in$/ do
 end
 
 Given /^member is logged in$/ do
-  pending # express the regexp above with the code you wish you had
+  visit '/users/sign_out'
 end
 
 When /^the member changes email and password$/ do
@@ -59,13 +59,13 @@ Then /^the member should see "(.*?)"$/ do |arg1|
 end
 
 Given /^no user exists with an email of "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+  User.find(:first, :conditions => { :email => email }).should be_nil
 end
 
 Then /^I go to the home page$/ do
   pending # express the regexp above with the code you wish you had
 end
 
-Then /^I should be signed out$/ do
-  pending # express the regexp above with the code you wish you had
-end
+#Then /^I should be signed out$/ do
+#  pending # express the regexp above with the code you wish you had
+#end
