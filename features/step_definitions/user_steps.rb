@@ -134,9 +134,10 @@ end
 
 ### THEN ###
 Then /^I should be signed in$/ do
-  page.should have_content "Logout"
-  page.should_not have_content "Sign up"
-  page.should_not have_content "Login"
+  page.should have_content "Patent pages"
+  #page.should have_content "Logout"
+  #page.should_not have_content "Sign up"
+  #page.should_not have_content "Login"
 end
 
 Then /^I should be signed out$/ do

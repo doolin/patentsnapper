@@ -38,10 +38,6 @@ When /^I sign in as "(.*?)"$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
 
-When /^I should be signed in$/ do
-  pending # express the regexp above with the code you wish you had
-end
-
 Given /^member is logged in$/ do
   visit '/users/sign_out'
 end
@@ -65,7 +61,3 @@ end
 Then /^I go to the home page$/ do
   pending # express the regexp above with the code you wish you had
 end
-
-#Then /^I should be signed out$/ do
-#  pending # express the regexp above with the code you wish you had
-#end
