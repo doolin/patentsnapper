@@ -11,7 +11,42 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121106161911) do
+ActiveRecord::Schema.define(:version => 20121107221917) do
+
+  create_table "invpats", :force => true do |t|
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "zipcode"
+    t.float    "lat"
+    t.float    "lon"
+    t.integer  "invseq"
+    t.string   "patent"
+    t.integer  "gyear"
+    t.string   "appyearstr"
+    t.string   "appdatestr"
+    t.string   "assignee"
+    t.string   "asgnum"
+    t.string   "patentclass"
+    t.string   "coauthor"
+    t.string   "invnum"
+    t.string   "lower"
+    t.string   "upper"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "invpats", ["assignee"], :name => "index_invpats_on_assignee"
+  add_index "invpats", ["firstname", "lastname"], :name => "index_invpats_on_firstname_and_lastname"
+  add_index "invpats", ["firstname"], :name => "index_invpats_on_firstname"
+  add_index "invpats", ["invnum"], :name => "index_invpats_on_invnum", :unique => true
+  add_index "invpats", ["lastname"], :name => "index_invpats_on_lastname"
+  add_index "invpats", ["lower"], :name => "index_invpats_on_lower"
+  add_index "invpats", ["patent"], :name => "index_invpats_on_patent"
+  add_index "invpats", ["upper"], :name => "index_invpats_on_upper"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
