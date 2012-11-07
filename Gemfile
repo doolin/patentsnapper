@@ -10,7 +10,7 @@ gem 'heroku'
 #gem 'eventmachine', '1.0.0.rc.4'
 #gem 'thin'
 
-group :production do
+group :production, :development do
   gem 'pg'
 end
 
@@ -31,13 +31,13 @@ group :development do
 end
 
 group :test, :development do
-  gem 'sqlite3'
   gem 'pry-rails'
   gem 'spork'
 #  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
   gem 'rspec-rails'
