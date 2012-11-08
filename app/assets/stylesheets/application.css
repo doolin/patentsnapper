@@ -10,6 +10,7 @@
  *
  *= require_self
  */
+/** comment */
 body {
   background-image: url(/assets/diagonal_waves.png);
 }
