@@ -18,6 +18,7 @@ development:
   pool: 5
   username: postgres
   password: postgres
+  port: 5432
   host: localhost
 
 

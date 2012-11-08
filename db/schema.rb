@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121107221917) do
+ActiveRecord::Schema.define(:version => 20121108181339) do
 
   create_table "invpats", :force => true do |t|
     t.string   "firstname"
@@ -47,6 +47,15 @@ ActiveRecord::Schema.define(:version => 20121107221917) do
   add_index "invpats", ["lower"], :name => "index_invpats_on_lower"
   add_index "invpats", ["patent"], :name => "index_invpats_on_patent"
   add_index "invpats", ["upper"], :name => "index_invpats_on_upper"
+
+  create_table "patent_classes", :force => true do |t|
+    t.string   "patent"
+    t.integer  "prim"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "patentclass"
+    t.string   "subclass"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
