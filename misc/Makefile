@@ -1,3 +1,16 @@
+# Move existing patent data from sqlite3 into postgres.
+# This collection of scripts is admittedly kludgey,
+# but each step is necessary, solving a specific issue
+# raised by migrating from sqlite3 to postgres.
+#
+# Cleaning all this up should be done in two parts.
+# 1. Use better schemas from the start, which will require
+# doing some work in the python code which parses the
+# patent source data.
+# 2. Combining steps pairwise within a unified script
+# written in Ruby or Rake, such that steps can be unit
+# tested as necessary.
+
 
 DB_TARGET = short
 DB_SOURCE = /data/patentdata/DVN/invpat_final.sqlite3
