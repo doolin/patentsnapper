@@ -1,0 +1,22 @@
+CREATE TABLE invpats(
+  Firstname TEXT,
+  Lastname TEXT,
+  Street TEXT,
+  City TEXT,
+  State TEXT,
+  Country TEXT,
+  Zipcode TEXT,
+  Lat REAL,
+  Lon REAL,
+  InvSeq INT,
+  Patent TEXT,
+  GYear INT,
+  AppYearStr TEXT,
+  AppDateStr TEXT,
+  Assignee TEXT,
+  AsgNum INT,
+  Class TEXT,
+  Invnum TEXT,
+  lower TEXT,
+  upper TEXT
+);
