@@ -1,5 +1,7 @@
 *.sqlite3
 *journal
 *.db
+*.gz
 
+*.dump
 *.inserts

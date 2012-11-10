@@ -13,24 +13,39 @@
 
 
 DB_TARGET = short
+DB_INVPATS = invpats
 DB_SOURCE = /data/patentdata/DVN/invpat_final.sqlite3
 
-refresh: postgres
+refresh: invpats
+
+invpats: clean makeinvpats
+	sqlite3 $(DB_INVPATS).sqlite3 < invpats.schema
+	sqlite3 $(DB_INVPATS).sqlite3 < invpats.inserts
+	sqlite3 $(DB_INVPATS).sqlite3 < alter_invpat.sql
+	sqlite3 $(DB_INVPATS).sqlite3 < export_pg.sql
+
+makeinvpats:
+	sqlite3 $(DB_SOURCE) < make_invpats.sql
 
 # We should maintain a target with a "short" database
 # for testing scripts.
-short: clean
-	sqlite3 $(DB_SOURCE) < make_short.sql
+short: clean makeshort
 	sqlite3 $(DB_TARGET).sqlite3 < invpats.schema
 	sqlite3 $(DB_TARGET).sqlite3 < invpats.inserts
 	sqlite3 $(DB_TARGET).sqlite3 < alter_invpat.sql
 	sqlite3 $(DB_TARGET).sqlite3 < export_pg.sql
 
+makeshort:
+	sqlite3 $(DB_SOURCE) < make_short.sql
+
 postgres: clean
-	createdb short -U postgres
+	createdb $(DB_TARGET) -U postgres
 	psql -U postgres -d $(DB_TARGET) < invpats_pg.schema
-	psql -U postgres -d $(DB_TARGET) < invpats_pg.inserts
+	psql -U postgres -d $(DB_TARGET) < invpats_pg.inserts > /dev/null
 
 clean:
-	rm -rf $(DB_TARGET)
-	dropdb short -U postgres
+	rm -rf $(DB_TARGET).sqlite3
+	dropdb $(DB_TARGET) -U postgres
+	
+clean-invpats:
+	$(DB_INVPATS).sqlite3
