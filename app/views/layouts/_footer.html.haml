@@ -2,17 +2,11 @@
   .container
     .row
       .span8.offset2
-        .pull-left.social
-          %span.st_facebook_hcount{ :st_url => "http://www.stormsavvy.com" }
-          |
-          %span.st_twitter_hcount{ :st_url => "http://www.stormsavvy.com" }
-          |
-          %span.st_plusone_hcount{ :st_url => "http://www.stormsavvy.com" }
 
         .pull-right
-          = link_to "Contact", '/contact'
-          \ 
-          \#{link_to "Privacy", '/privacy'} 
-          \#{link_to "Terms", '/terms'} 
-          \#{link_to "About", '/about'} 
-          \#{link_to "FAQ", '/faq'} 
+          %ul.unstyled.horizontal
+            %li= link_to "Contact", '/contact'
+            %li= link_to "Privacy", '/privacy'
+            %li= link_to "Terms", '/terms'
+            %li= link_to "About", '/about'
+            %li= link_to "FAQ", '/faq'

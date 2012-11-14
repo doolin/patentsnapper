@@ -1,0 +1,27 @@
+body {
+  background-image: url(/assets/diagonal_waves.png);
+}
+
+.horizontal {
+  @include horizontal-list;
+}
+
+.top_10 { margin-top: 10px; }
+.top_20 { margin-top: 20px; }
+.top_30 { margin-top: 30px; }
+.top_40 { margin-top: 40px; }
+
+.right_10 { margin-right: 10px; }
+.right_20 { margin-right: 20px; }
+.right_30 { margin-right: 30px; }
+.right_40 { margin-right: 40px; }
+
+.bottom_10 { margin-bottom: 10px; }
+.bottom_20 { margin-bottom: 20px; }
+.bottom_30 { margin-bottom: 30px; }
+.bottom_40 { margin-bottom: 40px; }
+
+.left_10 { margin-left: 10px; }
+.left_20 { margin-left: 20px; }
+.left_30 { margin-left: 30px; }
+.left_40 { margin-left: 40px; }
