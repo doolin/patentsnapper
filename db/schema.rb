@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115172151) do
+ActiveRecord::Schema.define(:version => 20121115172525) do
 
   create_table "assignees", :force => true do |t|
     t.string   "patent"
@@ -85,6 +85,14 @@ ActiveRecord::Schema.define(:version => 20121115172151) do
     t.string   "lawcountry"
     t.string   "orgname"
     t.integer  "lawseq"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "pat_descs", :force => true do |t|
+    t.string   "patent"
+    t.string   "title"
+    t.string   "abstract"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
