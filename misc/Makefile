@@ -18,7 +18,10 @@ DB_SOURCE = /data/patentdata/DVN/invpat_final.sqlite3
 
 refresh: invpats
 
-invpats: clean makeinvpats
+# Create a local copy of the sqlite3 file because it
+# needs to be altered, then rebuild with correct
+# schema, and export table to postgres using .mode insert.
+invpats: makeinvpats
 	sqlite3 $(DB_INVPATS).sqlite3 < invpats.schema
 	sqlite3 $(DB_INVPATS).sqlite3 < invpats.inserts
 	sqlite3 $(DB_INVPATS).sqlite3 < alter_invpat.sql
