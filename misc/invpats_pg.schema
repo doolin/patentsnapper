@@ -1,5 +1,6 @@
+-- TODO: Add primary key to id
 CREATE TABLE invpats(
-  id INTEGER,
+  id SERIAL,
   firstname TEXT,
   lastname TEXT,
   street TEXT,
