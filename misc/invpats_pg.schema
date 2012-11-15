@@ -1,5 +1,5 @@
 CREATE TABLE invpats(
-  id INTEGER,
+  id SERIAL,
   firstname TEXT,
   lastname TEXT,
   street TEXT,
