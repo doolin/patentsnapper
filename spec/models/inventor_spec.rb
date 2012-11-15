@@ -1,5 +1,9 @@
 require 'spec_helper'
 
 describe Inventor do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it "responds to patent" do
+    i = Inventor.new
+    i.respond_to?(:patent).should be_true
+  end
 end
