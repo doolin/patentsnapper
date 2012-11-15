@@ -12,14 +12,14 @@ Feature: The front page header and footer has certain required links
     Then the "reader" should be on the "<id>" page
 
     Scenarios: Let's go visit nav links
-    | anchor  | id    |
-    | Sign in | new   |
-    | Sign up | new   |
+    | anchor             | id    |
+    | Sign in            | new   |
+    | Request an API Key | new   |
 
   Scenario Outline: Reader visits footer links
     Given reader is on home page
     When the reader clicks "<anchor>"
-    Then the reader should be on the "<id>" page
+    Then the "reader" should be on the "<id>" page
 
     Scenarios: Let's go visit footer links
     | anchor   | id       |

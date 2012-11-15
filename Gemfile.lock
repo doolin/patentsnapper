@@ -118,6 +118,7 @@ GEM
       rubyzip
     heroku-api (0.3.6)
       excon (~> 0.16.7)
+    high_voltage (1.2.0)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -253,6 +254,7 @@ DEPENDENCIES
   guard-cucumber
   haml-rails
   heroku
+  high_voltage
   jquery-rails
   pg
   pry-rails

@@ -10,11 +10,12 @@
     = csrf_meta_tags
   %body{ template_id, template_class }
     = render 'layouts/header'
-    %p.notice
-      = notice
-    %p.alert
-      = alert
-    = yield
+    = render 'shared/messages'
+    .container
+      .row
+        .span12
+          .content
+            = yield
 
     %footer
       = render 'layouts/footer'

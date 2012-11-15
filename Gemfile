@@ -10,6 +10,7 @@ gem 'heroku'
 #gem 'eventmachine', '1.0.0.rc.4'
 #gem 'thin'
 gem "foreman"
+gem "high_voltage"
 
 group :production, :development do
   gem 'pg'

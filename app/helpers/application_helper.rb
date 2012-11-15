@@ -1,7 +1,12 @@
 module ApplicationHelper
 
   def template_id
-    {:id => params[:action] }
+    if params[:controller] == "high_voltage/pages"
+      {:id => params[:id] }
+    else
+      {:id => params[:action] }
+    end
+    
   end
 
   def template_class

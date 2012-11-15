@@ -142,7 +142,7 @@ Then /^I should be signed in$/ do
 end
 
 Then /^I should be signed out$/ do
-  page.should have_content "Sign up"
+  page.should have_content "Request an API Key"
   page.should have_content "Sign in"
   page.should_not have_content "Sign out"
   page.should have_content "Patent pages"
