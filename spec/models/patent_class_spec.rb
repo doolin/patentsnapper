@@ -1,5 +1,12 @@
 require 'spec_helper'
 
 describe PatentClass do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  [:patent, :prim, :patentclass, :subclass].each do |attr|
+    it "responds to #{attr}" do
+      i = PatentClass.new
+      i.respond_to?(attr).should be_true
+    end
+  end
+
 end
