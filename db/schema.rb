@@ -42,9 +42,10 @@ ActiveRecord::Schema.define(:version => 20121115173023) do
 
   create_table "claims", :force => true do |t|
     t.string   "patent"
-    t.string   "claim"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "claim",      :limit => 4096
+    t.string   "text",       :limit => 4096
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   create_table "inventors", :force => true do |t|
