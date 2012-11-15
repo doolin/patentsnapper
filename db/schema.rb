@@ -110,11 +110,12 @@ ActiveRecord::Schema.define(:version => 20121115173023) do
   end
 
   create_table "pat_descs", :force => true do |t|
-    t.string   "patent"
-    t.string   "title"
-    t.string   "abstract"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.string   "patent",     :limit => 512
+    t.string   "text",       :limit => 4096
+    t.string   "title",      :limit => 512
+    t.string   "abstract",   :limit => 4096
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   create_table "patent_classes", :force => true do |t|
