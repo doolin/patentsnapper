@@ -1,5 +1,12 @@
 require 'spec_helper'
 
 describe PatDesc do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  [:abstract, :patent, :title].each do |attr|
+    it "responds to #{attr}" do
+      i = PatDesc.new
+      i.respond_to?(attr).should be_true
+    end
+  end
+
 end
