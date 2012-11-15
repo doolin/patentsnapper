@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121115172525) do
+ActiveRecord::Schema.define(:version => 20121115173023) do
 
   create_table "assignees", :force => true do |t|
     t.string   "patent"
@@ -25,6 +25,26 @@ ActiveRecord::Schema.define(:version => 20121115172525) do
     t.integer  "asgseq"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "citations", :force => true do |t|
+    t.string   "patent"
+    t.string   "cit_date"
+    t.string   "cit_name"
+    t.string   "cit_kind"
+    t.string   "cit_country"
+    t.string   "citation"
+    t.string   "category"
+    t.string   "citseq"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "claims", :force => true do |t|
+    t.string   "patent"
+    t.string   "claim"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "inventors", :force => true do |t|
