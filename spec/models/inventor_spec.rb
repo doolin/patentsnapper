@@ -2,8 +2,12 @@ require 'spec_helper'
 
 describe Inventor do
 
-  it "responds to patent" do
-    i = Inventor.new
-    i.respond_to?(:patent).should be_true
+  [:patent, :city, :code, :country, :firstname,
+   :lastname, :nationality, :state, :street, :zip].each do |attr|
+    it "responds to #{attr}" do
+      i = Inventor.new
+      i.respond_to?(attr).should be_true
+    end
   end
+
 end
