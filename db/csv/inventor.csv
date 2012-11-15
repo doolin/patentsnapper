@@ -1,4 +1,4 @@
-Patent,Firstname,Lastname,Street,City,State,Country,Zipcode,Nationality,InvSeq
+patent,firstname,lastname,street,city,state,country,zipcode,nationality,invseq
 03859576,"LUKE C",LIN,"",ROCHESTER,NY,US,14602,"",2
 03858570,"JOHN W",BELD,"","O FALLON",MO,US,"","",1
 03859384,"DANIEL T",CARTY,"",WILLINGBORO,NJ,US,08046,"",1

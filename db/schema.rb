@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(:version => 20121115173023) do
     t.string   "city"
     t.string   "state"
     t.string   "country"
-    t.string   "zip"
+    t.string   "zipcode"
     t.string   "code"
     t.string   "nationality"
     t.string   "invseq"
