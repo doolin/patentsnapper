@@ -8,7 +8,10 @@ CREATE TABLE IF NOT EXISTS assignee (
   country     VARCHAR(2),
   nationality VARCHAR(2),
   residence   VARCHAR(2),
-  asgseq      INTEGER);
+  asgseq      INTEGER,
+  created_at  TIMESTAMP,
+  updated_at  TIMESTAMP
+);
 
 -- CREATE UNIQUE INDEX IF NOT EXISTS uqAsg ON assignee (Patent, AsgSeq);
 
