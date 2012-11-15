@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121108195734) do
+ActiveRecord::Schema.define(:version => 20121115172151) do
 
   create_table "assignees", :force => true do |t|
     t.string   "patent"
@@ -23,6 +23,22 @@ ActiveRecord::Schema.define(:version => 20121108195734) do
     t.string   "nationality"
     t.string   "residence"
     t.integer  "asgseq"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "inventors", :force => true do |t|
+    t.string   "patent"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "zip"
+    t.string   "code"
+    t.string   "nationality"
+    t.string   "invseq"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
