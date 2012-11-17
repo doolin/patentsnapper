@@ -1,4 +1,4 @@
---/*
+/*
 attach database "/data/patentdata/DVNFIXED/assignee.sqlite3" as attached;
 create table assignees as select rowid,* from attached.assignee;
 alter table assignees add column created_at TIMESTAMP;
@@ -6,7 +6,7 @@ alter table assignees add column updated_at TIMESTAMP;
 UPDATE assignees SET created_at = DATETIME('now');
 UPDATE assignees SET updated_at = DATETIME('now');
 detach database attached;
---*/
+*/
 
 /* ---
 attach database "/data/patentdata/DVNFIXED/citation00_10.sqlite3" as attached;
@@ -64,15 +64,15 @@ UPDATE pat_descs SET updated_at = DATETIME('now');
 detach database attached;
 */
 
-/* ---
+--/* ---
 attach database "/data/patentdata/DVNFIXED/patent.sqlite3" as attached;
-create table patents as select rowid,* from attached.patent limit 1000;
+create table patents as select rowid,* from attached.patent; -- limit 1000;
 alter table patents add column created_at TIMESTAMP;
 alter table patents add column updated_at TIMESTAMP;
 UPDATE patents SET created_at = DATETIME('now');
 UPDATE patents SET updated_at = DATETIME('now');
 detach database attached;
-*/ ---
+--*/ ---
 
 /*
 attach database "/data/patentdata/patents/claims/allclaims.sqlite3" as attached;
