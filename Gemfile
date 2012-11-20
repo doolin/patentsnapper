@@ -4,6 +4,7 @@ gem 'rails'
 gem 'jquery-rails'
 gem 'devise'
 
+
 gem 'haml-rails'
 gem 'rails-backbone'
 gem 'heroku'

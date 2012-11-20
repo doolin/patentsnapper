@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121108195734) do
+ActiveRecord::Schema.define(:version => 20121115173023) do
 
   create_table "assignees", :force => true do |t|
     t.string   "patent"
@@ -23,6 +23,43 @@ ActiveRecord::Schema.define(:version => 20121108195734) do
     t.string   "nationality"
     t.string   "residence"
     t.integer  "asgseq"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "citations", :force => true do |t|
+    t.string   "patent"
+    t.string   "cit_date"
+    t.string   "cit_name"
+    t.string   "cit_kind"
+    t.string   "cit_country"
+    t.string   "citation"
+    t.string   "category"
+    t.string   "citseq"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  create_table "claims", :force => true do |t|
+    t.string   "patent"
+    t.string   "claim",      :limit => 4096
+    t.string   "text",       :limit => 4096
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+  end
+
+  create_table "inventors", :force => true do |t|
+    t.string   "patent"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "zipcode"
+    t.string   "code"
+    t.string   "nationality"
+    t.string   "invseq"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
@@ -71,6 +108,15 @@ ActiveRecord::Schema.define(:version => 20121108195734) do
     t.integer  "lawseq"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "pat_descs", :force => true do |t|
+    t.string   "patent",     :limit => 512
+    t.string   "text",       :limit => 4096
+    t.string   "title",      :limit => 512
+    t.string   "abstract",   :limit => 4096
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   create_table "patent_classes", :force => true do |t|

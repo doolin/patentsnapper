@@ -13,4 +13,11 @@ maintained](http://stillmaintained.com/stillmaintained/stillmaintained.png)](htt
 * [Using rake to handle sqlite3 to postgres
 conversion](http://blog.renaud.io/2011/10/05/rails-3-migrate-your-data-from-sqlite-to-postgresql/)
 
+* `lib/tasks/importdummy.rake` handles importing the 3000 record
+pre-production test data.
 
+* `db/csv/*.csv` are the 3000 record files corresponding to tables in
+the database. These are loaded using the rake task.
+
+* Getting the data up to the server is best done with the heroku
+`pgbackups:restore` command.
