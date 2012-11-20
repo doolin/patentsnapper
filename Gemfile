@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails'
 gem 'jquery-rails'
 gem 'devise'
-
+gem 'rabl'
 
 gem 'haml-rails'
 gem 'rails-backbone'
