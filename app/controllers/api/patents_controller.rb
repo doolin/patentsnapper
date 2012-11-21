@@ -1,6 +1,7 @@
 class Api::PatentsController < ApplicationController
 end
 
+
 #############
 #  api attributes whitelist
 #############
