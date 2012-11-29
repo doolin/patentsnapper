@@ -8,5 +8,8 @@ When /^I visit assignees api endpoint for assignee record$/ do
 end
 
 Then /^I should the json representation of the assignee$/ do
-  pending # express the regexp above with the code you wish you had
+  puts response
+  puts page
+  puts page.body
+  response.should have_content @a.to_json
 end
