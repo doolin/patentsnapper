@@ -1,5 +1,5 @@
 object @assignee
-attributes :id, 
+attributes :id,
            :patent, 
            :asgtype, 
            :assignee, 

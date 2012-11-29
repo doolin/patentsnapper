@@ -17,6 +17,7 @@ Patentserver::Application.routes.draw do
     end
 
     scope "/inventors" do
+      match "/:id" => "Api::Inventors#show", as: :show_inventor
       # match "/state/:id" => "Api::Inventors/state", as: :inventors_state
       # match "/city/:id" => "Api::Inventors/city", as: :inventors_city
       root to: "Api::Inventors#index"
