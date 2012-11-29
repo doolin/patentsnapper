@@ -23,6 +23,11 @@ Patentserver::Application.routes.draw do
       root to: "Api::Inventors#index"
     end
 
+    scope "/citations" do
+      match "/:id" => "Api::Citations#show", as: :show_citation
+      root to: "Api::Citations#index"
+    end
+
     scope "/patents" do
       root to: "Api::Patents#index"
     end
