@@ -1,0 +1,1 @@
+Feature: Assignee endpoint acceptance
