@@ -1,0 +1,1 @@
+Feature: Inventor endpoint acceptance
