@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :claim do
     patent "MyString"
-    claim "MyString"
+    claim  "MyString"
   end
 end
