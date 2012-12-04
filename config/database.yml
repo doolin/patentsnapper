@@ -21,6 +21,16 @@ development:
   port: 5432
   host: localhost
 
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: patent_production
+  pool: 5
+  username: postgres
+  password: 
+  port: 5432
+  host: localhost
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -31,10 +41,10 @@ test: &test
   database: patent_test
   pool: 5
   username: postgres
-  password: 
+  password:
   port: 5432
   host: localhost
-  
+
 
 #production:
 #  adapter: sqlite3
