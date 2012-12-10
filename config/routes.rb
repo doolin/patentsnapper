@@ -4,10 +4,7 @@ Patentserver::Application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     scope "/assignees" do
-      match "/patent/:id" => "Assignees#patent", as: :assignee_patent
-      match "/asgtype/:id" => "Assignees#asgtype", as: :assignee_asgtype
-      match "/:id" => "Assignees#show", as: :show_assignee
-      root to: "Assignees#index"
+      match "/" => "Assignees#index", as: :assignees
     end
 
     scope "/invpats" do

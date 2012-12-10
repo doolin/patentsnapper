@@ -1,18 +1,10 @@
 class Api::AssigneesController < ApiController
   def index
-    @assignees = Assignee.limit(30)
+    query_params = params.except(:id, :format, :controller, :action)
+    @assignees = {} if query_params.empty?
+    @assignees = Assignee.where(query_params) unless query_params.empty?
+    
   end
   
-  def show
-    assignee = CGI.unescape(params[:id])
-    @assignee = Assignee.where("assignee ILIKE ?", "%#{assignee}%")
-  end
-  
-  def patent
-    @assignee = Assignee.find_by_patent(params[:id])
-  end
-  
-  def asgtype
-    @assignees = Assignee.find_by_asgtype(params[:id])
-  end
+
 end

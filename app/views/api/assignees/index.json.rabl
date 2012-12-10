@@ -1,2 +1,11 @@
-collection @assignees
-attributes :id, :firstname, :lastname
+object @assignees
+attributes :id,
+           :patent, 
+           :asgtype, 
+           :assignee, 
+           :city, 
+           :state, 
+           :country, 
+           :nationality, 
+           :residence, 
+           :asgseq
