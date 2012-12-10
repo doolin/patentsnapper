@@ -1,4 +1,4 @@
-object @invpat
+object @invpats
 attributes :id,
            :firstname,
            :lastname,

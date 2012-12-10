@@ -1,9 +1,25 @@
-Given /^an invpat with a lastname$/ do
+Given /^an invpat$/ do
   @i = FactoryGirl.create(:invpat)
 end
 
-When /^I query the invpat endpoint by last name$/ do
-  visit api_show_inv_pat_path(id: @i.lastname)
+When /^I visit the invpat endpoint with no query parameters$/ do
+  visit api_inv_pats_path
+end
+
+Then /^I should receive an empty json response$/ do
+  page.should have_content "[]"
+end
+
+When /^I query the invpat endpoint by lastname$/ do
+  visit api_inv_pats_path(lastname: @i.lastname)
+end
+
+When /^I query the invpat endpoint by lastname and city$/ do
+  visit api_inv_pats_path(lastname: @i.lastname, city: @i.city)
+end
+
+When /^I query the invpat endpoint by lastname and firstname$/ do
+  visit api_inv_pats_path(lastname: @i.lastname, firstname: @i.firstname)
 end
 
 Then /^I receive a json response with invpat data$/ do

@@ -11,8 +11,7 @@ Patentserver::Application.routes.draw do
     end
 
     scope "/invpats" do
-      match "/:id" => "InvPats#show", as: :show_inv_pat
-      root to: "Invpats#index"
+      match "/" => "InvPats#index", as: :inv_pats
     end
 
     scope "/inventors" do
