@@ -2,10 +2,26 @@
 
 FactoryGirl.define do
   factory :invpat do
-    firstname "MyString"
-    middlename "MyString"
-    lastname "MyString"
+    firstname "First"
+    lastname "Last"
+    street "123 Fake street"
+    city "San Francisco"
+    state "California"
+    country "USA"
+    zipcode "MyString"
+    lat "MyString"
+    lon "MyString"
+    invseq "MyString"
     patent "MyString"
-    invseq 1
+    gyear "MyString"
+    appyearstr "MyString"
+    appdatestr "MyString"
+    assignee "MyString"
+    asgnum "MyString"
+    patentclass "MyString"
+    coauthor "MyString"
+    invnum "MyString"
+    lower "MyString"
+    upper "MyString"
   end
 end

@@ -8,4 +8,4 @@ attributes :id,
            :gdate,
            :gyear,
            :appdate,
-           :appyear
+           :appyear     
