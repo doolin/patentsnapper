@@ -1,4 +1,4 @@
-class Api::PatentsController < ApplicationController
+class Api::PatentsController < ApiController
   def index
     
   end

@@ -1,4 +1,4 @@
-class Api::CitationsController < ApplicationController
+class Api::CitationsController < ApiController
 
   def show
     patent = CGI.unescape(params[:id])

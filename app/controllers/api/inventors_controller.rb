@@ -1,4 +1,4 @@
-class Api::InventorsController < ApplicationController
+class Api::InventorsController < ApiController
 
   def show
     inventor = CGI.unescape(params[:id])

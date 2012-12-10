@@ -1,15 +1,15 @@
 require 'spec_helper'
 
-# Specs in this file have access to a helper object that includes
-# the ApiHelper. For example:
-#
-# describe ApiHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       helper.concat_strings("this","that").should == "this that"
-#     end
-#   end
-# end
 describe ApiHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  
+  describe "query values to upcase" do
+    
+    it "takes query params and converts them to upcase" do
+      query_params = { "first" => "second", "third" => "fourth" }
+      helper.query_values_to_upcase(query_params)
+      query_params["first"].should eq("SECOND")
+    end
+    
+  end
+  
 end

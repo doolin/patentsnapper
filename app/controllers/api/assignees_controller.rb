@@ -1,4 +1,4 @@
-class Api::AssigneesController < ApplicationController
+class Api::AssigneesController < ApiController
   def index
     @assignees = Assignee.limit(30)
   end

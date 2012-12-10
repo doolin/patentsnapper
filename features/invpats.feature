@@ -1,5 +1,5 @@
 Feature: Inventor patent instance endpoint acceptance
-
+  
   Scenario: Vist the invpat endpoint without query params
     Given an invpat
     When I visit the invpat endpoint with no query parameters
