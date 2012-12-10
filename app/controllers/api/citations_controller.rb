@@ -1,7 +1,9 @@
 class Api::CitationsController < ApiController
 
-  def show
-    patent = CGI.unescape(params[:id])
-    @citation = Citation.find_by_patent(patent)
+  def index
+    query_params = params.except(:id, :format, :controller, :action)
+    @citations = {} if query_params.empty?
+    @citations = Citation.where(query_params) unless query_params.empty?
   end
+
 end

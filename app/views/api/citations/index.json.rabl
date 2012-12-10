@@ -1,4 +1,4 @@
-object @citation
+object @citations
 attributes :id,
            :patent,
            :cit_date,

@@ -3,7 +3,7 @@ Given /^an inventor with a lastname$/ do
 end
 
 When /^I query the inventor endpoint by last name$/ do
-  visit api_show_inventor_path(id: @i.lastname)
+  visit api_inventors_path(id: @i.lastname)
 end
 
 Then /^I receive a json response with inventor data$/ do

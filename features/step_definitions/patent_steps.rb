@@ -3,7 +3,7 @@ Given /^I have an patent record$/ do
 end
 
 When /^I visit patent api endpoint for patent record$/ do
-  visit api_show_patent_path(id: @p.patent)
+  visit api_patents_path(id: @p.patent)
 end
 
 Then /^I should the json representation of the patent$/ do

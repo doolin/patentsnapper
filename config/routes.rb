@@ -12,24 +12,19 @@ Patentserver::Application.routes.draw do
     end
 
     scope "/inventors" do
-      match "/:id" => "Inventors#show", as: :show_inventor
-      # match "/state/:id" => "Inventors/state", as: :inventors_state
-      # match "/city/:id" => "Inventors/city", as: :inventors_city
-      root to: "Inventors#index"
+      match "/" => "Inventors#index", as: :inventors
     end
 
     scope "/citations" do
-      match "/:id" => "Citations#show", as: :show_citation
-      root to: "Citations#index"
+      match "/" => "Citations#index", as: :citations
     end
 
     scope "/patents" do
-      match "/:id" => "Patents#show", as: :show_patent
-      root to: "Patents#index"
+      match "/" => "Patents#index", as: :patents
     end
     
     scope "/patent_descs" do
-      root to: "PatentDescs#index"
+      match "/" => "PatentDescs#index", as: :patent_descs
     end
 
     root to: "api#index"
