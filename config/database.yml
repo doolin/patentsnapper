@@ -16,8 +16,18 @@ development:
   encoding: unicode
   database: patent_development
   pool: 5
-  username: postgres
+  #username: postgres
   password: 
+  port: 5432
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: patent_production
+  pool: 5
+  #username: postgres
+  password:
   port: 5432
   host: localhost
 
@@ -30,7 +40,7 @@ test: &test
   encoding: unicode
   database: patent_test
   pool: 5
-  username: postgres
+  #username: postgres
   password:
   port: 5432
   host: localhost

@@ -2,39 +2,39 @@ Patentserver::Application.routes.draw do
 
   devise_for :users
 
-  scope "/api" do
+  namespace :api, defaults: { format: :json } do
     scope "/assignees" do
-      match "/patent/:id" => "Api::Assignees#patent", as: :assignee_patent
-      match "/asgtype/:id" => "Api::Assignees#asgtype", as: :assignee_asgtype
-      match "/:id" => "Api::Assignees#show", as: :show_assignee
-      root to: "Api::Assignees#index"
+      match "/patent/:id" => "Assignees#patent", as: :assignee_patent
+      match "/asgtype/:id" => "Assignees#asgtype", as: :assignee_asgtype
+      match "/:id" => "Assignees#show", as: :show_assignee
+      root to: "Assignees#index"
     end
 
     scope "/invpats" do
-      # match "/state/:id" => "Api::Invpats/state", as: :invpats_state
-      # match "/city/:id" => "Api::Invpats/city", as: :invpats_city
-      root to: "Api::Invpats#index"
+      # match "/state/:id" => "Invpats/state", as: :invpats_state
+      # match "/city/:id" => "Invpats/city", as: :invpats_city
+      root to: "Invpats#index"
     end
 
     scope "/inventors" do
-      match "/:id" => "Api::Inventors#show", as: :show_inventor
-      # match "/state/:id" => "Api::Inventors/state", as: :inventors_state
-      # match "/city/:id" => "Api::Inventors/city", as: :inventors_city
-      root to: "Api::Inventors#index"
+      match "/:id" => "Inventors#show", as: :show_inventor
+      # match "/state/:id" => "Inventors/state", as: :inventors_state
+      # match "/city/:id" => "Inventors/city", as: :inventors_city
+      root to: "Inventors#index"
     end
 
     scope "/citations" do
-      match "/:id" => "Api::Citations#show", as: :show_citation
-      root to: "Api::Citations#index"
-    end
-
-    scope "/claims" do
-      match "/:id" => "Api::Claims#show", as: :show_claim
-      root to: "Api::Claims#index"
+      match "/:id" => "Citations#show", as: :show_citation
+      root to: "Citations#index"
     end
 
     scope "/patents" do
-      root to: "Api::Patents#index"
+      match "/:id" => "Patents#show", as: :show_patent
+      root to: "Patents#index"
+    end
+    
+    scope "/patent_descs" do
+      root to: "PatentDescs#index"
     end
 
     root to: "api#index"
