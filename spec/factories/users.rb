@@ -4,6 +4,7 @@ FactoryGirl.define do
     email 'example@example.com'
     password 'please'
     password_confirmation 'please'
+    api_key "1234567890"
     # required if the Devise Confirmable module is used
     # confirmed_at Time.now
   end
