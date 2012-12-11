@@ -1,9 +1,17 @@
-Given /^an inventor with a lastname$/ do
+Given /^an inventor$/ do
   @i = FactoryGirl.create(:inventor)
 end
 
-When /^I query the inventor endpoint by last name$/ do
-  visit api_inventors_path(id: @i.lastname)
+When /^I visit the inventor endpoint with no query parameters$/ do
+  visit api_inventors_path()
+end
+
+When /^I query the inventor endpoint by patent$/ do
+  visit api_inventors_path(patent: @i.patent)
+end
+
+When /^I query the inventor endpoint by firstname and lastname$/ do
+  visit api_inventors_path(firstname: @i.firstname, lastname: @i.lastname)
 end
 
 Then /^I receive a json response with inventor data$/ do
@@ -12,3 +20,4 @@ Then /^I receive a json response with inventor data$/ do
     page.should have_content value
   end
 end
+

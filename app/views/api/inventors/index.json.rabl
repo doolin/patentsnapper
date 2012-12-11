@@ -1,4 +1,4 @@
-object @inventor
+object @inventors
 attributes :id,
            :patent,
            :firstname,

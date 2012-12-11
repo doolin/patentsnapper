@@ -1,10 +1,7 @@
 class Api::PatentsController < ApiController
   def index
-    
-  end
-  
-  def show
-    patent = CGI.unescape(params[:id])
-    @patent = Patent.where("patent like ?", "%#{patent}%")
+    query_params = params.except(:id, :format, :controller, :action)
+    @patents = {} if query_params.empty?
+    @patents = Patent.where(query_params) unless query_params.empty?
   end
 end

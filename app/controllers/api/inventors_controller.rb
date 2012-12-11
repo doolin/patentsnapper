@@ -1,7 +1,8 @@
 class Api::InventorsController < ApiController
 
-  def show
-    inventor = CGI.unescape(params[:id])
-    @inventor = Inventor.where("lastname ILIKE ?", "%#{inventor}%")
+  def index
+    query_params = params.except(:id, :format, :controller, :action)
+    @inventors = {} if query_params.empty?
+    @inventors = Inventor.where(query_params) unless query_params.empty?
   end
 end

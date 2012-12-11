@@ -1,4 +1,4 @@
-collection @patent
+collection @patents
 attributes :id,
            :patent,
            :kind,

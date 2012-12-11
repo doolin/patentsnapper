@@ -1,1 +1,0 @@
-Feature: Lawyer endpoint acceptance
