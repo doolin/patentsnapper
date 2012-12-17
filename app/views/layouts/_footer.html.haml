@@ -1,4 +1,4 @@
-.footer
+%footer#footer
   .container
     .row
       .span12
@@ -10,3 +10,46 @@
             %li.right_10= link_to "Terms", '/terms'
             %li.right_10= link_to "About", '/about'
             %li= link_to "FAQ", '/faq'
+
+
+  .container
+    #footer_content
+      .row
+        .span4
+          .widget
+            %h4 Interesting queries
+            %ul.unstyled
+              %li
+                %a{:href => "/growth-hacks/filepicker-io-s-customer-gallery"} FilePicker.io's Customer Gallery
+        .span4
+          .widget
+            %h4 About PatentView
+            %ul.unstyled
+              %li
+                %a{:href => "/about"} What is Patent View?
+              %li
+                %a{:href => "/contact"} Contact
+              %li
+                %a{:href => "/privacy-policy"} Privacy Policy
+              %li
+                %a{:href => "/terms-of-use"} Terms of Use
+        .span4
+          .widget
+            %h4 Stay Up To Date
+            #mc_embed_signup
+              %form#mc-embedded-subscribe-form.validate{:action => "http://adambarber.us6.list-manage.com/subscribe/post?u=0ffa70ff4081a9c2995439371&id=282a553b0b", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+                .mc-field-group
+                  %label{:for => "mce-EMAIL"}
+                  %input#mce-EMAIL.required.email{:name => "EMAIL", :placeholder => "Your Email Address", :type => "email", :value => ""}
+                #mce-responses.clear
+                  #mce-error-response.response{:style => "display:none"}
+                  #mce-success-response.response{:style => "display:none"}
+                %button#mc-embedded-subscribe.btn.btn-success{:name => "subscribe", :type => "submit", :value => "Subscribe"}
+                  Join Google Patent Group
+      .row
+        .span12.copyright
+          %a.external_link{"data-no-turbolink" => "true", :href => "http://heroku.com/", :onclick => "_gaq.push(['_trackEvent', 'Affiliate Link', 'External Click', 'Hosted by Heroku']);", :rel => "nofollow", :target => "_blank"}
+            %i.icon.icon-external-link.right_5>
+            Hosted by Heroku
+          |
+          Designed and Built by Dave Doolin and Adam Barber for the Coleman Fung Institute for Engineering Leadership - 2012
