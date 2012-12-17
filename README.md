@@ -1,4 +1,4 @@
-# PatentSnapper
+# Patent Server
 
 [![Build Status](https://secure.travis-ci.org/doolin/patentsnapper.png)](http://travis-ci.org/doolin/patentsnapper)
 [![Code
@@ -8,7 +8,27 @@ maintained](http://stillmaintained.com/stillmaintained/stillmaintained.png)](htt
 [![Dependency Status](https://gemnasium.com/doolin/patentsnapper.png)](https://gemnasium.com/doolin/patentsnapper)
 
 
-## Database provisioning
+Patent Server is an application written to allow JSON delivery of USPTO
+inventor and patent data. The application operates via an API accessible
+via arbitrary HTTP clients providing a valid query and valid API key.
+
+### How to use Patent Server
+
+* Register for an account.
+* Save your API key for use on patent queries.
+* Issue valid queries using API key.
+
+
+
+## Contributing
+
+Patent Server is open source software written to provide easy public
+access to patent data in an accessible form. Contributing is easy:
+fork the code, add new feature(s), issue pull requests.
+
+
+
+### Test database provisioning
 
 * [Using rake to handle sqlite3 to postgres
 conversion](http://blog.renaud.io/2011/10/05/rails-3-migrate-your-data-from-sqlite-to-postgresql/)
