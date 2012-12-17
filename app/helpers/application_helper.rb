@@ -6,7 +6,7 @@ module ApplicationHelper
     else
       {:id => params[:action] }
     end
-    
+
   end
 
   def template_class
@@ -23,21 +23,4 @@ module ApplicationHelper
     end
   end
 
-  # Method for handling message types in Bootstrap.
-  def twitterized_type(type)
-    case type
-      when :alert
-        "warning"
-      when :error
-        "error"
-      when :notice
-        "info"
-      when :success
-        "success"
-      when :notice
-        "notice"
-      else
-        type.to_s
-    end
-  end
 end
