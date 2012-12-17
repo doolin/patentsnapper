@@ -40,7 +40,7 @@ test: &test
   encoding: unicode
   database: patent_test
   pool: 5
-  #username: postgres
+  username: postgres
   password:
   port: 5432
   host: localhost
