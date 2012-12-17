@@ -27,6 +27,18 @@ access to patent data in an accessible form. Contributing is easy:
 fork the code, add new feature(s), issue pull requests.
 
 
+### Reporting bugs
+
+### Requesting features
+
+Feature requests can go into the issue tracking system as well, and
+we'll add the more interesting feature requests to a high-priority todo
+list below.
+
+#### TODO
+
+* Remove case sensitivity in queries.
+
 
 ### Test database provisioning
 
