@@ -11,6 +11,6 @@
               %li=link_to "Sign out", destroy_user_session_path
             - else
               %ul.nav
-              %li= link_to "API Documentation", "#documentation"
+              -#%li= link_to "API Documentation", "#documentation"
               %li=link_to "Sign in", new_user_session_path
               %li#sign_up_link=link_to "Request an API Key", new_user_registration_path
