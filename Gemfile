@@ -12,6 +12,8 @@ gem 'heroku'
 #gem 'thin'
 gem "foreman"
 gem "high_voltage"
+gem 'kramdown'
+gem 'haml-kramdown'
 
 group :production, :development do
   gem 'pg'

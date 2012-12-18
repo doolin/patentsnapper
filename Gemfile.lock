@@ -105,6 +105,8 @@ GEM
       cucumber (>= 1.2.0)
       guard (>= 1.1.0)
     haml (3.1.7)
+    haml-kramdown (0.0.1)
+      haml
     haml-rails (0.3.5)
       actionpack (>= 3.1, < 4.1)
       activesupport (>= 3.1, < 4.1)
@@ -126,6 +128,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.5)
+    kramdown (0.14.1)
     launchy (2.1.2)
       addressable (~> 2.3)
     libwebsocket (0.1.7.1)
@@ -256,10 +259,12 @@ DEPENDENCIES
   foreman
   growl
   guard-cucumber
+  haml-kramdown
   haml-rails
   heroku
   high_voltage
   jquery-rails
+  kramdown
   pg
   pry-rails
   rabl
