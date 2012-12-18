@@ -8,9 +8,9 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
-  
+
   after_create :generate_api_key
-  
+
   def generate_api_key
     self.api_key = Devise.friendly_token.first(10)
     self.save
