@@ -22,9 +22,9 @@ Feature: The front page header and footer has certain required links
     Then the "reader" should be on the "<id>" page
 
     Scenarios: Let's go visit footer links
-    | anchor   | id       |
-    | Terms    | terms    |
-    | About    | about    |
-    | FAQ      | faq      |
-    | Privacy  | privacy  |
-    | Contact  | contact  |
+    | anchor               | id       |
+    | Terms                | terms    |
+    | What is Patent View? | about    |
+    | FAQ                  | faq      |
+    | Privacy              | privacy  |
+    | Contact              | contact  |

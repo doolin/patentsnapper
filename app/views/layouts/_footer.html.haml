@@ -1,18 +1,5 @@
 %footer#footer
   .container
-    .row
-      .span12
-
-        .pull-right
-          %ul.unstyled.horizontal
-            %li.right_10= link_to "Contact", '/contact'
-            %li.right_10= link_to "Privacy", '/privacy'
-            %li.right_10= link_to "Terms", '/terms'
-            %li.right_10= link_to "About", '/about'
-            %li= link_to "FAQ", '/faq'
-
-
-  .container
     #footer_content
       .row
         .span4
@@ -28,11 +15,13 @@
               %li
                 %a{:href => "/about"} What is Patent View?
               %li
+                %a{:href => "/faq"} FAQ
+              %li
                 %a{:href => "/contact"} Contact
               %li
-                %a{:href => "/privacy-policy"} Privacy Policy
+                %a{:href => "/privacy"} Privacy Policy
               %li
-                %a{:href => "/terms-of-use"} Terms of Use
+                %a{:href => "/terms"} Terms of Use
         .span4
           .widget
             %h4 Stay Up To Date
