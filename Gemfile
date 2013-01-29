@@ -6,7 +6,7 @@ gem 'devise', '~> 2.2.3'
 gem 'rabl'
 
 gem 'haml-rails'
-gem 'rails-backbone'
+gem 'rails-backbone', '~> 0.9.0'
 gem 'heroku'
 #gem 'eventmachine', '1.0.0.rc.4'
 #gem 'thin'
