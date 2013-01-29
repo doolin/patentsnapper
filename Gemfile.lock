@@ -252,7 +252,7 @@ DEPENDENCIES
   compass-rails
   cucumber-rails
   database_cleaner
-  devise
+  devise (~> 2.2.3)
   email_spec
   factory_girl_rails
   foreman
