@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', "~> 3.2.11"
-gem 'jquery-rails'
+gem 'jquery-rails'#, '~> 2.2.0'
 gem 'devise', '~> 2.2.3'
 gem 'rabl'
 
