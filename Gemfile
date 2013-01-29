@@ -10,7 +10,7 @@ gem 'rails-backbone', '~> 0.9.0'
 gem 'heroku'
 #gem 'eventmachine', '1.0.0.rc.4'
 #gem 'thin'
-gem "foreman"
+gem "foreman", '~> 0.61.0'
 gem "high_voltage"
 gem 'kramdown'
 gem 'haml-kramdown'
