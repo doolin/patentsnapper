@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', "~> 3.2.9"
+gem 'rails', "~> 3.2.11"
 gem 'jquery-rails'
 gem 'devise'
 gem 'rabl'
@@ -49,7 +49,7 @@ group :test do
   gem 'sqlite3'
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 2.12.2'
   gem 'factory_girl_rails'
   gem 'email_spec'
 end
