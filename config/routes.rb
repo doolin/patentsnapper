@@ -1,5 +1,9 @@
 Patentserver::Application.routes.draw do
 
+  get "visualization/statistics"
+
+  get "visualization/cleantech"
+
   devise_for :users
 
   namespace :api, defaults: { format: :json } do

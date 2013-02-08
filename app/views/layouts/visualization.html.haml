@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %meta{ :charset => "utf-8" }
+    %title Patentserver
+    = stylesheet_link_tag    "bootstrap"
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = favicon_link_tag       '/funginstitute.ico'
+    = render 'shared/google_analytics'
+    = csrf_meta_tags
+    %script{:src => "http://d3js.org/d3.v3.min.js"}
+  %body{ template_id, template_class }
+    = render 'layouts/header'
+    = render 'shared/messages'
+    .container
+      .row
+        .span12
+          .content
+            = yield
+
+    = render 'layouts/footer'
