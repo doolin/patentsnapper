@@ -10,11 +10,16 @@ body {
 footer {
   position: fixed;
   bottom: 0px;
-  height: 160px;
+  height: 180px;
   width: 100%;
 }
 
 footer h4 {
   font-weight: normal;
   color: white;
+}
+
+.copyright {
+  font-weight: normal;
+  color: #ccc;
 }
