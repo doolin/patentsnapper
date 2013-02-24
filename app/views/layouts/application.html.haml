@@ -9,6 +9,7 @@
     = favicon_link_tag       '/funginstitute.ico'
     = render 'shared/google_analytics'
     = csrf_meta_tags
+    = render 'layouts/analytics'
   %body{ template_id, template_class }
     = render 'layouts/header'
     = render 'shared/messages'
@@ -19,4 +20,3 @@
             = yield
 
     = render 'layouts/footer'
-    = render 'layouts/analytics'
