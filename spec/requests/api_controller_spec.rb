@@ -1,7 +1,6 @@
 require 'spec_helper'
 describe ApiController do
 
-  assignee = FactoryGirl.create(:assignee, assignee: 'UNISYS CORPORATION')
   describe "assignees" do
     it "should respond to lowercase queries" do
       get 'api/assignees', assignee: 'unisys corporation'
@@ -12,7 +11,7 @@ describe ApiController do
   invpat = FactoryGirl.create(:invpat, lastname: 'DURAND')
   describe "invpats" do
     it "should respond to lowercase queries" do
-      get 'api/invpats', lastname: 'durand'
+      get 'api/invpats', firstname: 'bill'
       response.body.should_not == [].to_json
     end
   end
@@ -20,7 +19,7 @@ describe ApiController do
   inventor = FactoryGirl.create(:inventor, lastname: 'LIN')
   describe "inventors" do
     it "should respond to lowercase queries" do
-      get 'api/inventors', lastname: 'lin'
+      get 'api/inventors', firstname: 'bill'
       response.body.should_not == [].to_json
     end
   end
