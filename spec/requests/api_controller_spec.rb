@@ -1,6 +1,7 @@
 require 'spec_helper'
 describe ApiController do
 
+  # TODO: Doesn't work if test database not loaded. Should use fixtures instead.
   describe "assignees" do
     it "should respond to lowercase queries" do
       get 'api/assignees', assignee: 'unisys corporation'
