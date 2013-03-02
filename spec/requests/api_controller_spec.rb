@@ -11,14 +11,14 @@ describe ApiController do
 
   describe "invpats" do
     it "should respond to lowercase queries" do
-      get 'api/invpats', firstname: 'bill'
+      get 'api/invpats', lastname: 'durand'
       response.body.should_not == [].to_json
     end
   end
 
   describe "inventors" do
     it "should respond to lowercase queries" do
-      get 'api/inventors', firstname: 'bill'
+      get 'api/inventors', lastname: 'lin'
       response.body.should_not == [].to_json
     end
   end
