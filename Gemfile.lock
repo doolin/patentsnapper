@@ -261,6 +261,7 @@ DEPENDENCIES
   devise
   email_spec
   factory_girl_rails
+  email_spec
   foreman
   growl
   guard-cucumber
