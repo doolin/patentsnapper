@@ -13,8 +13,7 @@ gem 'heroku'
 gem "foreman", '~> 0.61.0'
 gem "high_voltage"
 gem 'kramdown'
-gem 'haml-kramdown'
-#gem 'kramdown-haml'
+gem 'haml-kramdown', :github => 'doolin/haml-kramdown'
 
 group :production, :development do
   gem 'pg'

@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/doolin/haml-kramdown.git
+  revision: b86077d61350eb0a76759632ce1259f1d103b8cd
+  specs:
+    haml-kramdown (0.0.1)
+      haml
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -108,8 +115,6 @@ GEM
       guard (>= 1.1.0)
     haml (4.0.2)
       tilt
-    haml-kramdown (0.0.1)
-      haml
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
       activesupport (>= 3.1, < 4.1)
@@ -265,7 +270,7 @@ DEPENDENCIES
   foreman (~> 0.61.0)
   growl
   guard-cucumber
-  haml-kramdown
+  haml-kramdown!
   haml-rails
   heroku
   high_voltage
