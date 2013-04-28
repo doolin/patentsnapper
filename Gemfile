@@ -5,6 +5,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'rabl'
 gem 'ransack'
+gem 'will_paginate'
 
 gem 'haml-rails'
 gem 'rails-backbone'
