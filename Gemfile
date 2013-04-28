@@ -4,6 +4,7 @@ gem 'rails', "~> 3.2.13"
 gem 'jquery-rails'
 gem 'devise'
 gem 'rabl'
+gem 'ransack'
 
 gem 'haml-rails'
 gem 'rails-backbone'
