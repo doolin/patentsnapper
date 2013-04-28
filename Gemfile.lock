@@ -258,7 +258,7 @@ DEPENDENCIES
   compass-rails
   cucumber-rails
   database_cleaner
-  devise (~> 2.2.3)
+  devise
   email_spec
   factory_girl_rails
   foreman
