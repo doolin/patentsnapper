@@ -80,7 +80,7 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
-    diff-lcs (1.1.3)
+    diff-lcs (1.2.4)
     dotenv (0.7.0)
     ejs (1.1.1)
     erubis (2.7.0)
@@ -206,17 +206,17 @@ GEM
       json (~> 1.4)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rspec-core (2.12.2)
-    rspec-expectations (2.12.1)
-      diff-lcs (~> 1.1.3)
-    rspec-mocks (2.12.2)
-    rspec-rails (2.12.2)
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.1)
+    rspec-rails (2.13.1)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
-      rspec-core (~> 2.12.0)
-      rspec-expectations (~> 2.12.0)
-      rspec-mocks (~> 2.12.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
     ruby-progressbar (1.0.2)
     rubyzip (0.9.9)
     sass (3.2.8)
@@ -277,7 +277,7 @@ DEPENDENCIES
   rails-backbone
   rails_best_practices
   rb-fsevent
-  rspec-rails (~> 2.12.2)
+  rspec-rails
   sass-rails
   spork
   spork-rails

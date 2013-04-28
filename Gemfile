@@ -49,7 +49,7 @@ group :test do
   gem 'sqlite3'
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
-  gem 'rspec-rails', '~> 2.12.2'
+  gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'email_spec'
 end
