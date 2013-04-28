@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', "~> 3.2.13"
 gem 'jquery-rails'
-gem 'devise', '~> 2.2.3'
+gem 'devise'
 gem 'rabl'
 
 gem 'haml-rails'
