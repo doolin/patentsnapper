@@ -24,7 +24,7 @@ Feature: The front page header and footer has certain required links
     Scenarios: Let's go visit footer links
     | anchor               | id       |
     | Terms                | terms    |
-    | What is Patent View? | about    |
+    | What is Patent API?  | about    |
     | FAQ                  | faq      |
     | Privacy              | privacy  |
     | Contact              | contact  |
