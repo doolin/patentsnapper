@@ -260,7 +260,7 @@ DEPENDENCIES
   database_cleaner
   devise (~> 2.2.3)
   email_spec
-  factory_girl_rails (~> 4.2.0)
+  factory_girl_rails
   foreman
   growl
   guard-cucumber
