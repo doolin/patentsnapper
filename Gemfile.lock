@@ -281,4 +281,4 @@ DEPENDENCIES
   sass-rails
   spork
   sqlite3
-  uglifier (>= 1.0.3)
+  uglifier
