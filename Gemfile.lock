@@ -259,7 +259,8 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   devise (~> 2.2.3)
-  factory_girl_rails (~> 4.2.0)
+  email_spec
+  factory_girl_rails
   foreman
   growl
   guard-cucumber
