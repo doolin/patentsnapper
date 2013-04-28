@@ -5,7 +5,7 @@
 Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/doolin/patentsnapper)
 [![Still
 maintained](http://stillmaintained.com/stillmaintained/stillmaintained.png)](http://stillmaintained.com/doolin/patentsnapper)
-[![Dependency Status](https://gemnasium.com/doolin/patentsnapper.png)](https://gemnasium.com/doolin/patentsnapper)
+
 
 
 Patent Server is an application written to allow JSON delivery of USPTO
