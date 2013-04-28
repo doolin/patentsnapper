@@ -1,14 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', "~> 3.2.11"
-gem 'jquery-rails'#, '~> 2.2.0'
+gem 'rails', "~> 3.2.13"
+gem 'jquery-rails'
 gem 'devise', '~> 2.2.3'
 gem 'rabl'
 
 gem 'haml-rails'
 gem 'rails-backbone', '~> 0.9.0'
 gem 'heroku'
-#gem 'eventmachine', '1.0.0.rc.4'
 #gem 'thin'
 gem "foreman"
 gem "high_voltage"
