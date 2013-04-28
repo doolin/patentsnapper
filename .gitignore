@@ -7,6 +7,9 @@
 # Ignore bundler config
 /.bundle
 
+# `bundle --path` put all the gems in path/
+path/*
+
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
