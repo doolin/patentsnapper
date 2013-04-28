@@ -2,13 +2,13 @@
 
 FactoryGirl.define do
   factory :citation do
-    patent      "MyString"
-    cit_date    "MyString"
-    cit_name    "MyString"
-    cit_kind    "MyString"
-    cit_country "MyString"
-    citation    "MyString"
-    category    "MyString"
-    citseq      "MyString"
+    patent      "MYSTRING"
+    cit_date    "MYSTRING"
+    cit_name    "MYSTRING"
+    cit_kind    "MYSTRING"
+    cit_country "MYSTRING"
+    citation    "MYSTRING"
+    category    "MYSTRING"
+    citseq      "MYSTRING"
   end
 end

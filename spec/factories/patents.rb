@@ -2,14 +2,14 @@
 
 FactoryGirl.define do
   factory :patent do
-    patent "MyString"
-    kind "MyString"
+    patent "MYSTRING"
+    kind "MYSTRING"
     claims 1
-    apptype "MyString"
-    appnum "MyString"
-    gdate "MyString"
-    gyear "MyString"
-    appdate "MyString"
+    apptype "MYSTRING"
+    appnum "MYSTRING"
+    gdate "MYSTRING"
+    gyear "MYSTRING"
+    appdate "MYSTRING"
     appyear 1
   end
 end

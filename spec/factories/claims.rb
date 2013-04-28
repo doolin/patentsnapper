@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :claim do
-    patent "MyString"
-    claim  "MyString"
+    patent "MYSTRING"
+    claim  "MYSTRING"
   end
 end

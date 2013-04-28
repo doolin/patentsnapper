@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :patent_class do
-    patent "MyString"
+    patent "MYSTRING"
     prim 1
     patentclass 252
     subclass 108.1

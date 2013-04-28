@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :pat_desc do
-    patent "MyString"
-    title "MyString"
-    abstract "MyString"
+    patent "MYSTRING"
+    title "MYSTRING"
+    abstract "MYSTRING"
   end
 end

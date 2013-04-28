@@ -43,7 +43,7 @@ group :test, :development do
   gem 'rb-fsevent'
   gem 'growl'
   gem 'spork-rails'
-#  gem 'ruby-debug19', :require => 'ruby-debug'
+  #gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :test do

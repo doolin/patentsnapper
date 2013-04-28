@@ -2,14 +2,14 @@
 
 FactoryGirl.define do
   factory :assignee do
-    patent "MyString"
+    patent "MYSTRING"
     asgtype 1
-    assignee "MyString"
-    city "MyString"
-    state "MyString"
-    country "MyString"
-    nationality "MyString"
-    residence "MyString"
+    assignee "MYSTRING"
+    city "MYSTRING"
+    state "MYSTRING"
+    country "MYSTRING"
+    nationality "MYSTRING"
+    residence "MYSTRING"
     asgseq 1
   end
 end

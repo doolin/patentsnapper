@@ -2,11 +2,11 @@
 
 FactoryGirl.define do
   factory :lawyer do
-    patent "MyString"
-    firstname "MyString"
-    lastname "MyString"
-    lawcountry "MyString"
-    orgname "MyString"
+    patent "MYSTRING"
+    firstname "MYSTRING"
+    lastname "MYSTRING"
+    lawcountry "MYSTRING"
+    orgname "MYSTRING"
     lawseq 1
   end
 end

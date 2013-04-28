@@ -2,15 +2,15 @@
 
 FactoryGirl.define do
   factory :inventor do
-    patent      "MyString"
-    firstname   "MyString"
-    lastname    "MyString"
-    street      "MyString"
-    city        "MyString"
-    state       "MyString"
-    country     "MyString"
-    zipcode     "MyString"
-    nationality "MyString"
-    invseq      "MyString"
+    patent      "MYSTRING"
+    firstname   "MYSTRING"
+    lastname    "MYSTRING"
+    street      "MYSTRING"
+    city        "MYSTRING"
+    state       "MYSTRING"
+    country     "MYSTRING"
+    zipcode     "MYSTRING"
+    nationality "MYSTRING"
+    invseq      "MYSTRING"
   end
 end
