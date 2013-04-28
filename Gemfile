@@ -6,7 +6,7 @@ gem 'devise', '~> 2.2.3'
 gem 'rabl'
 
 gem 'haml-rails'
-gem 'rails-backbone', '~> 0.9.0'
+gem 'rails-backbone'
 gem 'heroku'
 #gem 'thin'
 gem "foreman"
