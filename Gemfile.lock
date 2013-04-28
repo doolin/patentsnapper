@@ -281,4 +281,4 @@ DEPENDENCIES
   spork
   spork-rails
   sqlite3
-  uglifier (>= 1.0.3)
+  uglifier
