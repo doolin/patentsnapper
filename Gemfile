@@ -39,7 +39,7 @@ group :test, :development do
   gem 'pry-rails'
   gem 'spork'
   gem 'guard-cucumber'
-  gem 'rb-fsevent', '~> 0.9.1'
+  gem 'rb-fsevent'
   gem 'growl'
   gem 'spork-rails'
 #  gem 'ruby-debug19', :require => 'ruby-debug'

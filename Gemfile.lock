@@ -276,7 +276,7 @@ DEPENDENCIES
   rails (~> 3.2.13)
   rails-backbone
   rails_best_practices
-  rb-fsevent (~> 0.9.1)
+  rb-fsevent
   rspec-rails (~> 2.12.2)
   sass-rails
   spork
