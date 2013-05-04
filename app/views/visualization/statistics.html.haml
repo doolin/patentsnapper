@@ -1,2 +1,24 @@
-%h1 Visualization#statistics
-%p Find me in app/views/visualization/statistics.html.haml
+:css
+  svg {
+    background-color: #fff;
+  }
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+  .bar {
+    fill: steelblue;
+  }
+  .x.axis path {  display: none;}
+
+%h1
+  Patent database statistics
+
+%div
+  = render :partial => 'barchart'
+
+#chart
+= javascript_include_tag 'barchart'
+-#%script{:src => "barchart.js", :type => "text/javascript"}
