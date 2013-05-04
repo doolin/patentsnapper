@@ -1,6 +1,6 @@
-var margin = {top: 20, right: 40, bottom: 30, left: 40};
-var width = 800 - margin.left - margin.right;
-var height = 500 - margin.top - margin.bottom;
+var margin = {top: 20, right: 50, bottom: 50, left: 60};
+var width = 720 - margin.left - margin.right;
+var height = 350 - margin.top - margin.bottom;
 
 var formatPercent = d3.format(".0%");
 
@@ -45,9 +45,17 @@ d3.csv("/assets/patent_full.csv", function(error, data) {
     .append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
-      .attr("dy", ".71em")
+      .attr("dy", "-3.9em")
+      .attr("dx", "-4.5em")
       .style("text-anchor", "end")
-      .text("Frequency");
+      .text("Completeness of inventor data");
+
+  svg.append("text")
+      .attr("y", 6)
+      .attr("dy", "23em")
+      .attr("dx", "24em")
+      .style("text-anchor", "end")
+      .text("Inventor attribute");
 
   svg.selectAll(".bar")
       .data(data)
