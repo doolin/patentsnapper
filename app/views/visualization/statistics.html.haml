@@ -17,8 +17,8 @@
   Patent database statistics
 
 %div
-  = render :partial => 'barchart'
+  :kramdown
+    #{ render 'barchart' }
 
 #chart
-= javascript_include_tag 'barchart'
--#%script{:src => "barchart.js", :type => "text/javascript"}
+  = javascript_include_tag 'barchart'
